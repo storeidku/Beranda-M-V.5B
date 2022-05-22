@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+                                <meta charset="utf-8">
+
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://flamid.000webhostapp.com/js/flam.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+                                <title> BY STORE ID </title>
+
+                                <style>
+
+                                                                
+
+ @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
+
+                                                               body, html {
+
+                                                                width: 100%;
+
+                                                                height: auto;
+
+                                                                overflow-x: hidden;
+
+                                                                }
+
+                                                                body {
+
+                                                                padding: 0;
+
+                                                                overflow-x: hidden;
+
+                                                                margin: 0;
+
+                                                                }
+
+                                                                #ul table {
+
+                                                                                                padding:0;
+
+                                                                                                margin: 0;
+
+                                                                                                width: 100%;
+
+                                                                                                text-align: center;
+
+                                                                }
+
+                                                                #ul td {
+
+                                                                                                padding: 1%;
+
+                                                                }
+
+                                                                #ulp td {
+
+                                                                                                padding: 1%;
+
+                                                                }
+
+                                                                #ulp table {
+
+                                                                width: 100%;
+
+                                                                text-align: center;
+
+                                                                                                padding: 0;
+
+                                                                                                position: relative;
+
+                                                                                                left: 3.4px;
+
+                                                                                                margin: 0;
+
+                                                                }
+
+                                                                .dsn {
+
+                                                                                                display: none;
+
+                                                                }
+
+.tabcontent {
+
+  display: none;
+
+}
+
+#tooltip2 {
+
+  position: relative;
+
+  display: inline-block;
+
+  border-radius: 0px;
+
+  padding: 0px;
+
+  margin-top: 0px;
+
+  color: grey;
+
+  margin-left: 0px;
+
+  margin-right: 0px;
+
+  width: 24%;
+
+  font-size: 10px;
+
+  margin-bottom: 15px;
+
+}
+
+#tooltip2 a {
+
+  cursor: none;
+
+}
+
+#tooltip2 #tooltiptext2 {
+
+  visibility: hidden;
+
+  width: 400%;
+
+  background-color: transparent;
+
+  color: grey;
+
+  text-align: center;
+
+  border-radius: 10px 10px 10px 10px;
+
+  padding: 5px 0;
+
+  position: absolute;
+
+  z-index: 1;
+
+  top: 0;
+
+  left: 0%;
+
+  margin-left: 0px;
+
+  opacity: 0;
+
+  transition: opacity 0.5s;
+
+}
+
+.imgs11 {
+
+  padding: 0px;
+
+  margin-top: 0px;
+
+  border-radius: 4px;
+
+  margin-bottom: 5px;  
+
+  width: 228%;
+
+  text-align: center;
+
+  border-radius: 50%;
+
+  transition: 0.3s;
+
+}
+
+.imgs11:hover {
+
+  background-color: #32CD32;
+
+  border-radius: 4px;
+
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
+
+  transition: 0.3s;
+
+  border: 1px solid black;
+
+}
+
+.list2 {
+
+                                border: 1px solid transparent;
+
+}
+
+.list2:hover {
+
+  background-color: grey;
+
+  border-radius: 2px;
+
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
+
+  transition: 0.2s;
+
+  border: 1px solid white;
+
+}
+
+#tooltip2:hover #tooltiptext2 {
+
+  visibility: visible;
+
+  opacity: 1;
+
+}
+
+#slid {
+
+overflow: scroll;
+
+width: 100%;
+
+height: auto;
+
+}
+
+#over {
+
+                                width: 140%;
+
+                                overflow: scroll;
+
+                                height: auto;
+
+}
+
+#slid2 {
+
+overflow: scroll;
+
+width: 100%;
+
+height: auto;
+
+}
+
+#over2 {
+
+                                width: 140%;
+
+                                overflow: scroll;
+
+                                height: auto;
+
+}
+
+#slid-p {
+
+overflow: scroll;
+
+width: 100%;
+
+height: auto;
+
+}
+
+#over-p {
+
+                                width: 220%;
+
+                                overflow: scroll;
+
+                                height: auto;
+
+}
+
+.imgs111 {
+
+  padding: 0px;
+
+  margin-top: 0px;
+
+  border-radius: 0px;
+
+  margin-bottom: 5px;
+
+  width:50%;
+
+  transition: 0.3s;
+
+}
+
+#ulp button.active {
+
+                                border: 0px solid black;
+
+                                border-radius: 20px;
+
+}
+
+.imgs111:hover {
+
+  background-color: #32CD32;
+
+  border-radius: 100px;
+
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
+
+  transition: 0.3s;
+
+}
+
+.hdo {
+
+                                top: 4px;float:right;color: white;position:relative;background: #00a5df;font-family:;font-size: 2px;transition: 0.1s;
+
+}
+
+.hdo:hover {
+
+                                background: white;
+
+                                color: #00a5df;
+
+                                border: 1px solid #00a5df;
+
+                                transition: 0.1s;
+
+}
+
+.hdo2 {
+
+                                top: 0;float:right;color: white;position:relative;background: #00a5df;font-family:;font-size: 2px;transition: 0.1s;
+
+}
+
+.hdo2:hover {
+
+                                background: white;
+
+                                color: #00a5df;
+
+                                border: 1px solid #00a5df;
+
+                                transition: 0.1s;
+
+}
+
+.hdou {
+
+                                color: white;position:relative;background: #00a5df;font-family:;font-size: 10px;transition: 0.1s;bottom: 12px;
+
+}
+
+.hdou:hover {
+
+                                background: white;
+
+                                color: #00a5df;
+
+                                border: 1px solid #00a5df;
+
+                                transition: 0.1s;
+
+}
+
+#promo img {
+
+                                width: 90%;
+
+                                border: 1px dotted #c43fff;
+
+}
+
+#tanggalwaktu {
+
+  color: rgb(252, 150, 65);
+
+font-size: 10px;
+
+  -webkit-text-stroke: 3px rgb(210, 65, 36);
+
+  text-shadow: 4px 4px 10px rgba(210, 65, 36, 0.4),
+
+                   4px 4px 20px rgba(210, 45, 26, 0.4),
+
+                   4px 4px 30px rgba(210, 25, 16, 0.4),
+
+                   4px 4px 40px rgba(210, 15, 06, 0.4);
+
+font-family: monospace;
+
+}
+
+.flam-table .td {
+
+border: 2px solid white;
+
+        }
+
+        .flam-table .td:hover {
+
+        background: grey;
+
+        color: white;
+
+}
+
+                #table {
+
+                                                                                                width: 100%;
+
+                                                                }
+
+                                                                #table  td {
+
+                                                                                                padding: 2%;
+
+                                                                }
+
+                                                                #fa {
+
+                                                                                                position:relative;
+
+                                                                                                top: 5px;
+
+                                                                }
+
+                                                                #list {
+
+                                                                background-color: #f1f1f1;
+
+                                                                text-align: center;
+
+                                                                color: grey;
+
+                                                                padding: 2%;
+
+                                                                width:100%;
+
+                                                                border-radius: 4px;
+
+                                                                transition: 0.8s;
+
+                                                                border: 1px solid #f1f1f1;
+
+                                                                }
+
+                                                                #list2 {
+
+                                                                background-color: white;
+
+        border: 2px solid white;
+
+        width:100%;
+
+        color:grey;
+
+        height:auto;
+
+        text-align: center;
+
+        padding: 2%;
+
+        
+
+                                                                border-radius: 4px;
+
+                                                                transition: 0.8s;
+
+                                                                border: 1px solid white;
+
+        position:relative;
+
+        box-shadow:0 1px 1px 1px rgba(0,0,0,0.1);
+
+        transition: 0.4s;
+
+        }
+
+        #list:hover {
+
+                                                                border: 1px solid black;
+
+                                                                border-radius: 4px;
+
+                                                                transition: 0.8s;
+
+                                                                }
+
+                                                                #list2:hover {
+
+                                                                border: 1px solid black;
+
+                                                                border-radius: 4px;
+
+                                                                transition: 0.8s;
+
+                                                                }
+
+                                                                #f {
+
+                                                                                                font-size: 8px;
+
+                                                                                                position: relative;
+
+                                                                                                bottom: 5px;
+
+                                                                }
+
+                                                                .flam-tableu td {
+
+                                                                padding: 2%;
+
+                                                                }
+
+        </style>
+
+</head>
+
+<body>
+
+        <div style="background-color:;">
+
+                                <div style="background-color: #37474F;border-radius: 0 0 36% 36%;">
+
+                                                                
+
+                                                                <div class="">
+
+            <div id="padd" style="padding:2.4%;">
+
+            <table style="">
+
+                <tr>
+
+                    <td style="width:16%;">
+
+                        <a href=""><img src="{{foto_profil}}" alt="" style="width: 102%;border-radius:50%;box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.1);position:relative;border: 1px solid white;bottom: 10%;"></a>
+
+                    </td>
+
+                    <td>
+
+                                                    <h4 style="color: transparent;">2</h4>
+
+                    </td>
+
+                    <td style="color: white;width:60%:">
+
+                      <div id="text">
+
+                          
+
+                  <small style="font-size: 12px;font-weight: bold;"><i>Hello, <span>{nama}</span></i></small> <br/>
+
+                <small style="font-size: 12px;position: relative;bottom:5px;">Status : <span> {{status_akun}}</span><a href="#" style="text-decoration:  none;color: white;"><span style="float: right;position: relative;left: 98%;" class="glyphicon glyphicon-pencil list2"></span></a></small> <br/>
+
+                <small style="font-size: 12px;position: relative;bottom:10px;">Nomor HP : <span> {{nomor_telepon}}</span></small>         
+
+                       </div>
+
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <br/>
+
+            <br/>
+
+            <br/>
+
+            </div></div>
+
+                                </div>
+
+                                <div class="container">
+
+                                                                <div style="border-radius: 10px;background-color: #f1f1f1;position: relative;bottom: 52px;">
+
+                                                                                
+
+                                                                                
+
+                                                                                                <center>
+
+                                                                                                <div id="ul" style="padding: 1.8%;padding-bottom: 0;">
+
+                                                                                                <table>
+
+                                                                                                                                <td>
+
+                                                                                                                                                                <a href="#" style="text-decoration: none;"><small style="color: black;"><span class="fa fa-user" style="color: ;background: white;border-radius: 50%;padding: 2.4%;position: relative;right: 8%;"></span> Profil</small></a>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td>
+
+                                                                                                                                                        <div style="text-decoration: none;"><a style="text-decoration: none;" href="#"><small style="color: black;"><span class="fa fa-cart-plus" style="color: ;background: white;border-radius: 50%;padding: 2%;position: relative;right: 4%;"></span> Keranjang</small></a></div
+
+                                                                                                                                </td>
+
+                                                                                                                                <td>
+
+                                                                                                                                                                <a href="#" style="text-decoration: none;"><small style="color: black;"><span class="fa fa-ticket" style="color: ;background: white;border-radius: 50%;padding: 3%;position: relative;right: 8%;text-align: center;"></span> Voucher</small></a>
+
+                                                                                                                                </td>
+
+                                                                                                </table>
+
+                                                                                                </div>
+
+                                                                                                </center>
+
+                                                                                                <center>
+
+                                                                                                <div id="ul" style="padding-bottom: 1.4%;padding-top: 1.4%;">
+
+                                                                                                <table>
+
+                                                                                                                                <td>
+
+                                                                                                                                                                <a href="#" style="text-decoration: none;"><small style="color: black;"><span class="fa fa-legal" style="color: ;background: white;border-radius: 50%;padding: 2.4%;position: relative;right: 8%;"></span> Peraturan</small></a>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td>
+
+                                                                                                                                                        <div style="text-decoration: none;"><a style="text-decoration: none;" href="#"><small style="color: black;"><span class="fa fa-history" style="color: ;background: white;border-radius: 50%;padding: 2%;position: relative;right: 4%;"></span> Update</small></a></div
+
+                                                                                                                                </td>
+
+                                                                                                                                <td>
+
+                                                                                                                                                                <a href="#" style="text-decoration: none;"><small style="color: black;"><span class="glyphicon glyphicon-headphones" style="color: ;background: white;border-radius: 50%;padding: 3%;position: relative;right: 8%;text-align: center;"></span>Whatsapp</small></a>
+
+                                                                                                                                </td>
+
+                                                                                                </table>
+
+                                                                                                </div>
+
+                                                                                                </center>
+
+                                                                                                
+
+                                                                </div>
+
+                                </div>
+
+                                
+
+                                <div class="container">
+
+                                                                <div style="border-radius: 10px;background-color: #f1f1f1;position: relative;bottom: 48px;">
+
+<marquee scrollamount="4" style="position: relative;top: 2.8px;"><small style="color: #37474F;background:;font-weight: bold;" id="flam-ds">SIMPLE DASHBOARD BY STOREIDKU</small></marquee>
+
+                                                                </div>
+
+                                </div>
+
+                                <div>
+
+                                                                
+
+                                <div class="container">
+
+                                                                <div style="border-radius: 10px;background-color: #f1f1f1;position: relative;bottom: 30px;overflow: hidden;">
+
+                                                                                                <br/>
+
+                                                
+
+<div id="" class="">
+
+<div id="slid">
+
+                                <div id="over">
+
+                                                                <div class="container">
+
+                                                                <table id="b">
+
+                                                                                                <tr>
+
+                                                                                                                                <td>
+
+                                                                                                                                                                 <a href="#"><div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" alt=""><br/>Produk</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+                                  
+
+  </span>
+
+</div></a>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td>
+
+                                                                <a href="#"><div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" alt=""><br/>Produk</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+                                  
+
+  </span>
+
+</div></a>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td>
+
+                                                                                                                                                         <div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" alt=""><br/>Produk</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+                                  
+
+  </span>
+
+</div></a>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td>
+
+                                                                                                                                                        
+
+                                                                <a href="#"><div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" alt=""><br/>Produk</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+                                  
+
+  </span>
+
+</div></a>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td>
+
+                                                                                                                                                        
+
+                                                                <a href="#"><div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" alt=""><br/>Produk</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+                                  
+
+  </span>
+
+</div></a>        
+
+                                                                                                                                </td>
+
+                                                                                                                                <td>
+
+                                                                                                                                                        
+
+                                                                <a href="#"><div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" alt=""><br/>Produk</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+                                  
+
+  </span>
+
+</div></a>        
+
+                                                                                                                                </td>
+
+                                                                                                </tr>
+
+                                                                </table>
+
+                                </div>
+
+</div>
+
+</div></div>
+
+       </div>
+
+        <div id="" style="border-radius: 10px;background-color: #f1f1f1;position: relative;bottom: 12px;overflow: hidden;">
+
+                                        <div class="container" style="padding-top: 2%;padding-bottom: 2.8%;">
+
+<small style="font-family: monospace;"><b>Promo Terbaru</b> <small class="badge hdo2" id="flam-pop" onclick="flamPop()">Lihat Semua </small></small>
+
+</div>
+
+<div id="slid-p" style="padding-top: 2%;">
+
+    <div id="over-p">
+
+        <div>
+
+            <div class="container" id="promo">
+
+        <table>
+
+            <tr>
+
+                <td>
+
+                    <img src="https://lh3.googleusercontent.com/-WlSCqXaZelI/YUMG9y4uyqI/AAAAAAAACJg/fDvJ4EnYA8YrssurY4w1sXLSIeWesnFhwCLcBGAsYHQ/s1600/1631782637632302-3.png" style="border-radius: 4px 44px 4px 14px;" alt="">
+
+                </td>
+
+                <td>
+
+                    <img src="https://lh3.googleusercontent.com/-WlSCqXaZelI/YUMG9y4uyqI/AAAAAAAACJg/fDvJ4EnYA8YrssurY4w1sXLSIeWesnFhwCLcBGAsYHQ/s1600/1631782637632302-3.png" style="border-radius: 4px 44px 4px 14px;" alt="">
+
+                </td>
+
+                <td>
+
+                    <img src="https://lh3.googleusercontent.com/-WlSCqXaZelI/YUMG9y4uyqI/AAAAAAAACJg/fDvJ4EnYA8YrssurY4w1sXLSIeWesnFhwCLcBGAsYHQ/s1600/1631782637632302-3.png" style="border-radius: 4px 44px 4px 14px;" alt="">
+
+                </td>
+
+                <td>
+
+                    <img src="https://lh3.googleusercontent.com/-WlSCqXaZelI/YUMG9y4uyqI/AAAAAAAACJg/fDvJ4EnYA8YrssurY4w1sXLSIeWesnFhwCLcBGAsYHQ/s1600/1631782637632302-3.png" style="border-radius: 4px 44px 4px 14px;" alt="">
+
+                </td>
+
+                <td>
+
+                    <img src="https://lh3.googleusercontent.com/-WlSCqXaZelI/YUMG9y4uyqI/AAAAAAAACJg/fDvJ4EnYA8YrssurY4w1sXLSIeWesnFhwCLcBGAsYHQ/s1600/1631782637632302-3.png" style="border-radius: 4px 44px 4px 14px;" alt="">
+
+                </td>
+
+            </tr>
+
+        </table>
+
+        </div>
+
+        <br/>
+
+    </div>
+
+    
+
+</div>
+
+</div>
+
+<div class="container">
+
+<small style="font-family: monospace;"><b>Produk Terbaru</b> <small class="badge hdo">Lihat Semua </small></small>
+
+</div>
+
+<br/>
+
+ <div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" style="width: 50%;" alt=""><br/>Promo</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+      
+
+  </span>
+
+</div></a>
+
+<div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" style="width: 50%;" alt=""><br/>Promo</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+      
+
+  </span>
+
+</div></a>
+
+<div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" style="width: 50%;" alt=""><br/>Promo</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+      
+
+  </span>
+
+</div></a>
+
+<div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" style="width: 50%;" alt=""><br/>Promo</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+      <br/>
+
+  </span>
+
+</div></a>
+
+<div id="hd" style="display: none;">
+
+<div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" style="width: 50%;" alt=""><br/>Promo</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+      
+
+  </span>
+
+</div></a>
+
+<div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" style="width: 50%;" alt=""><br/>Promo</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+</div>
+
+      
+
+  </span>
+
+</div></a>
+
+<div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" style="width: 50%;" alt=""><br/>Promo</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+      
+
+  </span>
+
+</div></a>
+
+<div id="tooltip2"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" style="width: 50%;" alt=""><br/>Promo</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div><br/>
+
+  </span>
+
+</div></a>
+
+</div>
+
+<div class="container">
+
+                                                                <h6 style="padding-bottom: 2%;padding-top: 2%;font-family: monospace;"><span data-content="#POWERED BY @FLAMid" data-placement="bottom" id="flam"><b>Pencarian Populer</b></span>
+
+                                                                <small id="flam-ubah1" onclick="flamClick1()" style="float: right;color: ;position: relative;top: 0;" class="badge hdo2"><span class="glyphicon glyphicon-refresh fa-spin"></span> Ubah</small>
+
+                                                                <small id="flam-ubah2" onclick="flamClick2()"class="badge hdo2" style="float: right;color: ;position: relative;top: ;display: none;" ><span class="glyphicon glyphicon-refresh fa-spin"></span> Ubah</small>
+
+                                                                <small id="flam-ubah3" class="badge hdo2" onclick="flamClick3()" style="float: right;color: ;position: relative;top: ;display: none;"><span class="glyphicon glyphicon-refresh fa-spin"></span> Ubah</small>
+
+                                                                <small class="badge hdo2"  id="flam-ubah4" onclick="flamClick4()" style="float: right;color: ;position: relative;top: ;display: none;"><span class="glyphicon glyphicon-refresh fa-spin"></span> Ubah</small>
+
+                                                                <small class="badge hdo2" id="flam-ubah5" onclick="flamClick5()" style="float: right;color: ;position: relative;top: ;display: none;"><span class="glyphicon glyphicon-refresh fa-spin"></span> Ubah</small>
+
+                                                                </h6></div></div>
+
+                                                                <br/>
+
+                                                                <div id="" style="border-radius: 16px;background-color: #f1f1f1;position: relative;bottom: 14.8px;overflow: hidden;">
+
+<table style="padding: 0;margin: 0;width: 100%;" class="flam-table" id="flam-table1">
+
+                                                                                                <tr>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td1">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Hiu Gosong</b></small>        <br/><small style="color: grey;">6RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                                                <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjZXgqkxkk5mhrybtJHnu0LLRDX_-18y6_Xvau30NlLCa42xJbf4A544io4WvxNvP7YRNLRFjma0x41OcPNHHESa0JDuFT30ui1yteHKDtOSMRWcziqlPKkDg0MQ6fTUGLQ2zA61FdI5P3sBdLN_5kmVobnRuM2xPO2o2s2nEIPuzGa40A8W4Xhgeaa_w=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td1">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Ikan Hidup</b></small>        <br/><small style="color: grey;">40RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                        <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjZXgqkxkk5mhrybtJHnu0LLRDX_-18y6_Xvau30NlLCa42xJbf4A544io4WvxNvP7YRNLRFjma0x41OcPNHHESa0JDuFT30ui1yteHKDtOSMRWcziqlPKkDg0MQ6fTUGLQ2zA61FdI5P3sBdLN_5kmVobnRuM2xPO2o2s2nEIPuzGa40A8W4Xhgeaa_w=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                                        </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                </tr>
+
+                                                                                                <tr>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td2">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Pisang Kuning</b></small>        <br/><small style="color: grey;">100RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                                                <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjZXgqkxkk5mhrybtJHnu0LLRDX_-18y6_Xvau30NlLCa42xJbf4A544io4WvxNvP7YRNLRFjma0x41OcPNHHESa0JDuFT30ui1yteHKDtOSMRWcziqlPKkDg0MQ6fTUGLQ2zA61FdI5P3sBdLN_5kmVobnRuM2xPO2o2s2nEIPuzGa40A8W4Xhgeaa_w=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td2"> 
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Cumi - Cumi</b></small>        <br/><small style="color: grey;">40RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                        <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjZXgqkxkk5mhrybtJHnu0LLRDX_-18y6_Xvau30NlLCa42xJbf4A544io4WvxNvP7YRNLRFjma0x41OcPNHHESa0JDuFT30ui1yteHKDtOSMRWcziqlPKkDg0MQ6fTUGLQ2zA61FdI5P3sBdLN_5kmVobnRuM2xPO2o2s2nEIPuzGa40A8W4Xhgeaa_w=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                                        </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                </tr>
+
+                                                                </table>
+
+                                                                
+
+                                                                <!-- 2 -->
+
+                                                                
+
+<table style="padding: 0;margin: 0;width: 100%;display: none;" class="flam-table" id="flam-table2">
+
+                                                                                                <tr>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td1">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Minum Es</b></small>        <br/><small style="color: grey;">6RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                                                <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjoiaFPYjHlbJp0IXwVSXFrGuCGq_xJjHR-0EVLO5uCmqw3bwRvlLAgw7AXb5K3UWNW9weRNq-W9JdwGhYH_tibJCnpC-A3XvUPBqL3aIuf6z8CAaZCPhc68IqaqnDCDMK09c3bY9IJmpPAsQP-CSrTE2q2IejpfD0WEeIF8gJk1ykok4DLeHaT3SNRWA=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td1">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Ikan</b></small>        <br/><small style="color: grey;">40RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                        <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjoiaFPYjHlbJp0IXwVSXFrGuCGq_xJjHR-0EVLO5uCmqw3bwRvlLAgw7AXb5K3UWNW9weRNq-W9JdwGhYH_tibJCnpC-A3XvUPBqL3aIuf6z8CAaZCPhc68IqaqnDCDMK09c3bY9IJmpPAsQP-CSrTE2q2IejpfD0WEeIF8gJk1ykok4DLeHaT3SNRWA=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                                        </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                </tr>
+
+                                                                                                <tr>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td2">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Pisang Besar</b></small>        <br/><small style="color: grey;">100RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                                                <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjoiaFPYjHlbJp0IXwVSXFrGuCGq_xJjHR-0EVLO5uCmqw3bwRvlLAgw7AXb5K3UWNW9weRNq-W9JdwGhYH_tibJCnpC-A3XvUPBqL3aIuf6z8CAaZCPhc68IqaqnDCDMK09c3bY9IJmpPAsQP-CSrTE2q2IejpfD0WEeIF8gJk1ykok4DLeHaT3SNRWA=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td2"> 
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b> Es Teger </b></small>        <br/><small style="color: grey;">40RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                        <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjoiaFPYjHlbJp0IXwVSXFrGuCGq_xJjHR-0EVLO5uCmqw3bwRvlLAgw7AXb5K3UWNW9weRNq-W9JdwGhYH_tibJCnpC-A3XvUPBqL3aIuf6z8CAaZCPhc68IqaqnDCDMK09c3bY9IJmpPAsQP-CSrTE2q2IejpfD0WEeIF8gJk1ykok4DLeHaT3SNRWA=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                                        </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                </tr>
+
+                                                                </table>
+
+                                                        
+
+                                                                <!-- 3 -->
+
+                                                                
+
+                                                                <table style="padding: 0;margin: 0;width: 100%;display: none;" class="flam-table" id="flam-table3">
+
+                                                                                                <tr>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td1">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Hiu Mati</b></small>        <br/><small style="color: grey;">10RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                                                <td >
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjPFGMlWyDSwHLS2LvGEIz3MPmvgJTEFcgg4oC_1bWHSMiNQ7GbaJALRSDx8fR1PWqgYzAvOuSPZgonU3MyfTZJ7KW18jHB0HBS42TE0tZ7dnNs3i5WgRRxIcaWGKq3Q2nW_7oQy3QsC6CNNjmr677JYDtxlCPxJAsyr135AUbud-MlWioHLce6u4vJfQ=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td1">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Ikan Italia</b></small>        <br/><small style="color: grey;">4RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                        <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjPFGMlWyDSwHLS2LvGEIz3MPmvgJTEFcgg4oC_1bWHSMiNQ7GbaJALRSDx8fR1PWqgYzAvOuSPZgonU3MyfTZJ7KW18jHB0HBS42TE0tZ7dnNs3i5WgRRxIcaWGKq3Q2nW_7oQy3QsC6CNNjmr677JYDtxlCPxJAsyr135AUbud-MlWioHLce6u4vJfQ=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                                        </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                </tr>
+
+                                                                                                <tr>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td2">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Pisang Bulat</b></small>        <br/><small style="color: grey;">80RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                                                <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjPFGMlWyDSwHLS2LvGEIz3MPmvgJTEFcgg4oC_1bWHSMiNQ7GbaJALRSDx8fR1PWqgYzAvOuSPZgonU3MyfTZJ7KW18jHB0HBS42TE0tZ7dnNs3i5WgRRxIcaWGKq3Q2nW_7oQy3QsC6CNNjmr677JYDtxlCPxJAsyr135AUbud-MlWioHLce6u4vJfQ=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td2">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Cumi - Cumi</b></small>        <br/><small style="color: grey;">2RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                        <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjPFGMlWyDSwHLS2LvGEIz3MPmvgJTEFcgg4oC_1bWHSMiNQ7GbaJALRSDx8fR1PWqgYzAvOuSPZgonU3MyfTZJ7KW18jHB0HBS42TE0tZ7dnNs3i5WgRRxIcaWGKq3Q2nW_7oQy3QsC6CNNjmr677JYDtxlCPxJAsyr135AUbud-MlWioHLce6u4vJfQ=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                                        </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                </tr>
+
+                                                                </table>
+
+                                                                                                                                
+
+                                                                <!-- 4 -->
+
+                                                                
+
+                                                                <table style="padding: 0;margin: 0;width: 100%;display: none;" class="flam-table" id="flam-table4">
+
+                                                                                                <tr>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td1">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Hiu Gosong</b></small>        <br/><small style="color: grey;">6RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                                                <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiinoUDI9V-Pe3yvnmOaizwZCQKZ-AHD9QIhaBD7wncdl_rA3vHY06RSHbdkZhCt-Y5xS4T__ghD8WDysowMCq0Ab84F08fKIYgaxySyw_X1tUICjmKvc7OM2q_ndl1r8wJ_HkQ8DFYifCKHPYyAhtatQgZ9WWHyL-tgPHZfxrTLc3Ymsxa6CAoStzgEw=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td1">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Ikan Hidup</b></small>        <br/><small style="color: grey;">40RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                        <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiinoUDI9V-Pe3yvnmOaizwZCQKZ-AHD9QIhaBD7wncdl_rA3vHY06RSHbdkZhCt-Y5xS4T__ghD8WDysowMCq0Ab84F08fKIYgaxySyw_X1tUICjmKvc7OM2q_ndl1r8wJ_HkQ8DFYifCKHPYyAhtatQgZ9WWHyL-tgPHZfxrTLc3Ymsxa6CAoStzgEw=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                                        </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                </tr>
+
+                                                                                                <tr>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td2">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Pisang Kuning</b></small>        <br/><small style="color: grey;">100RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                                                <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiinoUDI9V-Pe3yvnmOaizwZCQKZ-AHD9QIhaBD7wncdl_rA3vHY06RSHbdkZhCt-Y5xS4T__ghD8WDysowMCq0Ab84F08fKIYgaxySyw_X1tUICjmKvc7OM2q_ndl1r8wJ_HkQ8DFYifCKHPYyAhtatQgZ9WWHyL-tgPHZfxrTLc3Ymsxa6CAoStzgEw=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td2"> 
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Cumi - Cumi </b></small>        <br/><small style="color: grey;">40RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                        <td>
+
+                                                                                                                                                                                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEiinoUDI9V-Pe3yvnmOaizwZCQKZ-AHD9QIhaBD7wncdl_rA3vHY06RSHbdkZhCt-Y5xS4T__ghD8WDysowMCq0Ab84F08fKIYgaxySyw_X1tUICjmKvc7OM2q_ndl1r8wJ_HkQ8DFYifCKHPYyAhtatQgZ9WWHyL-tgPHZfxrTLc3Ymsxa6CAoStzgEw=s512" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                                        </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                </tr>
+
+                                                                </table>
+
+                                                                                                                                
+
+                                                                <!-- 5 -->
+
+                                                                
+
+                                                                <table style="padding: 0;margin: 0;width: 100%;display: none;" class="flam-table" id="flam-table5">
+
+                                                                                                <tr>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td1">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Hiu italia</b></small>        <br/><small style="color: grey;">10RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                                                <td>
+
+                                                                                                                                                                                <img src="https://lh3.googleusercontent.com/-7JhTAo_2hKI/YPA2x8Y0F-I/AAAAAAAABpA/jYhQNoiEDrQs9w7so2MwclIlvDglToy7ACLcBGAsYHQ/s1600/1626355397774850-0.png" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td1">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Ikan Brazil</b></small>        <br/><small style="color: grey;">600RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                        <td>
+
+                                                                                                                                                                                <img src="https://lh3.googleusercontent.com/-7JhTAo_2hKI/YPA2x8Y0F-I/AAAAAAAABpA/jYhQNoiEDrQs9w7so2MwclIlvDglToy7ACLcBGAsYHQ/s1600/1626355397774850-0.png" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                                        </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                </tr>
+
+                                                                                                <tr>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td2">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Pisang Hijau</b></small>        <br/><small style="color: grey;">600RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                                                <td>
+
+                                                                                                                                                                                <img src="https://lh3.googleusercontent.com/-7JhTAo_2hKI/YPA2x8Y0F-I/AAAAAAAABpA/jYhQNoiEDrQs9w7so2MwclIlvDglToy7ACLcBGAsYHQ/s1600/1626355397774850-0.png" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                                                <td style="width: 50%;" class="td" id="td2">
+
+                                                                                                                                                                <div style="padding: 2%;">
+
+                                                                                                                                                                                                <table style="padding: 0;margin: 0;">
+
+                                                                                                                                                                                                                                <td style="width: 68%;">
+
+                                                                                                        <small><b>Coklat Cumi</b></small>        <br/><small style="color: grey;">10RB + Produk</small>                                                                                                                                        
+
+                                                                                                                                                                                                                                </td>
+
+                                                                                                                        <td>
+
+                                                                                                                                                                                <img src="https://lh3.googleusercontent.com/-7JhTAo_2hKI/YPA2x8Y0F-I/AAAAAAAABpA/jYhQNoiEDrQs9w7so2MwclIlvDglToy7ACLcBGAsYHQ/s1600/1626355397774850-0.png" alt="" style="width: 100%;">
+
+                                                                                                                                                </td>                                                                        </table>
+
+                                                                                                                                                                </div>
+
+                                                                                                                                </td>
+
+                                                                                                </tr>
+
+                                                                </table>
+
+</div></div>
+
+<br/>
+
+<div style="overflow: hidden;top:0;width: 100%;left:100%;bottom:0;z-index: 1;position: fixed;transition: 0.2s;height: 0px;padding-left: 4%;" id="flam-up">
+
+                                <div style="box-shadow: -2px 2px 6px 0 rgba(0,0,0,0.2);top: 42%;background: linear-gradient(to bottom, #d0d0d0, grey);border-radius: 10px 0 0 10px;color: white;position: relative;width: 100%;">
+
+                                                                <h6 style="font-family: monospace;padding-bottom: 2%;"><a href="javascript:void(0)" onclick="flamCls()"><span id="flam-up-cls" style="float: left;right: 10px;color: red;bottom: 14px;background: white;border-radius: 50%;transition: 1.6s;" class="glyphicon glyphicon-remove-sign fa-2x"></span></a> <center style="position: relative;top: 6px;"><b>Promo Terbaru</b></center></h6>
+
+                                                                
+
+ <div id="tooltip2"style="color: white;"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" style="width: 50%;" alt=""><br/>Promo</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+      
+
+  </span>
+
+</div></a>
+
+<div id="tooltip2"style="color: white;"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" style="width: 50%;" alt=""><br/>Promo</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+      
+
+  </span>
+
+</div></a>
+
+<div id="tooltip2"style="color: white;"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" style="width: 50%;" alt=""><br/>Promo</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+      
+
+  </span>
+
+</div></a>
+
+<div id="tooltip2" style="color: white;"><center><img class="imgs11" src="https://1.bp.blogspot.com/-ge8WE9lSX-k/YVQzkU7OFjI/AAAAAAAACOM/jGQ8_k_VAnUxpNAdv90VtjjrZYgT1D6fwCLcBGAsYHQ/s554/images%2B%25282%2529.png" style="width: 50%;color: white;" alt=""><br/>Promo</center>
+
+  <span id="tooltiptext2" style="margin-left:9%;border-radius:10px;">
+
+   <div id="" style="display:none">
+
+  </div>
+
+      <br/>
+
+  </span>
+
+</div></a>
+
+                                </div>
+
+</div>
+
+    <script>
+
+$(function(){
+
+$("#mdrr").on("click", function(){
+
+$("#mdr").modal();
+
+});
+
+$("#m1").on("click", function(){
+
+$("#md1").modal({
+
+fadeDuration: 40
+
+});
+
+});
+
+$("#peri").on("click", function(){
+
+$("#perii").modal();
+
+});
+
+$("#yer").on("click", function(){
+
+$("#yerr").modal();
+
+});
+
+$("#her").on("click", function(){
+
+$("#herr").modal();
+
+});
+
+$("#per").on("click", function(){
+
+$("#perr").modal();
+
+});
+
+$(".hdo").click(function(){
+
+$("#hd").slideToggle(800);
+
+});
+
+$("#open").on("click", function(){
+
+$(".hdd").css({
+
+"display" : "block"
+
+});
+
+$("#open").css({
+
+    "display" : "none"
+
+});
+
+});
+
+$(".open2").on("click", function(){
+
+$(".hdd2").css({
+
+"display" : "block"
+
+});
+
+$(".open2").css({
+
+    "display" : "none"
+
+});
+
+});
+
+$(".open3").on("click", function(){
+
+$(".hdd3").css({
+
+"display" : "block"
+
+});
+
+$(".open3").css({
+
+    "display" : "none"
+
+});
+
+});
+
+$(".open4").on("click", function(){
+
+$(".hdd4").css({
+
+"display" : "block"
+
+});
+
+$(".open4").css({
+
+    "display" : "none"
+
+});
+
+});
+
+});
+
+function flamClick1() {
+
+                                document.getElementById("flam-ubah1").style.display = "none";
+
+                                document.getElementById("flam-ubah2").style.display = "block";
+
+                                document.getElementById("flam-ubah3").style.display = "none";
+
+                                document.getElementById("flam-ubah4").style.display = "none";
+
+                                document.getElementById("flam-ubah5").style.display = "none";
+
+                                
+
+                                document.getElementById("flam-table1").style.display = "none";
+
+                                document.getElementById("flam-table2").style.display = "block";
+
+                                document.getElementById("flam-table3").style.display = "none";
+
+                                document.getElementById("flam-table4").style.display = "none";
+
+                                document.getElementById("flam-table5").style.display = "none";
+
+}
+
+function flamClick2() {
+
+                                document.getElementById("flam-ubah1").style.display = "none";
+
+                                document.getElementById("flam-ubah2").style.display = "none";
+
+                                document.getElementById("flam-ubah3").style.display = "block";
+
+                                document.getElementById("flam-ubah4").style.display = "none";
+
+                                document.getElementById("flam-ubah5").style.display = "none";
+
+                                
+
+                                document.getElementById("flam-table1").style.display = "none";
+
+                                document.getElementById("flam-table2").style.display = "none";
+
+                                document.getElementById("flam-table3").style.display = "block";
+
+                                document.getElementById("flam-table4").style.display = "none";
+
+                                document.getElementById("flam-table5").style.display = "none";
+
+}
+
+function flamClick3() {
+
+                                document.getElementById("flam-ubah1").style.display = "none";
+
+                                document.getElementById("flam-ubah2").style.display = "none";
+
+                                document.getElementById("flam-ubah3").style.display = "none";
+
+                                document.getElementById("flam-ubah4").style.display = "block";
+
+                                document.getElementById("flam-ubah5").style.display = "none";
+
+                                
+
+                                document.getElementById("flam-table1").style.display = "none";
+
+                                document.getElementById("flam-table2").style.display = "none";
+
+                                document.getElementById("flam-table3").style.display = "none";
+
+                                document.getElementById("flam-table4").style.display = "block";
+
+                                document.getElementById("flam-table5").style.display = "none";
+
+}
+
+function flamCls() {
+
+                                document.getElementById("flam-up").style.left = "100%";
+
+}
+
+function flamClick4() {
+
+                                document.getElementById("flam-ubah1").style.display = "none";
+
+                                document.getElementById("flam-ubah2").style.display = "none";
+
+                                document.getElementById("flam-ubah3").style.display = "none";
+
+                                document.getElementById("flam-ubah4").style.display = "none";
+
+                                document.getElementById("flam-ubah5").style.display = "block";
+
+                                
+
+                                document.getElementById("flam-table1").style.display = "none";
+
+                                document.getElementById("flam-table2").style.display = "none";
+
+                                document.getElementById("flam-table3").style.display = "none";
+
+                                document.getElementById("flam-table4").style.display = "none";
+
+                                document.getElementById("flam-table5").style.display = "block";
+
+}
+
+function flamClick5() {
+
+                                document.getElementById("flam-ubah1").style.display = "block";
+
+                                document.getElementById("flam-ubah2").style.display = "none";
+
+                                document.getElementById("flam-ubah3").style.display = "none";
+
+                                document.getElementById("flam-ubah4").style.display = "none";
+
+                                document.getElementById("flam-ubah5").style.display = "none";
+
+                                
+
+                                document.getElementById("flam-table1").style.display = "block";
+
+                                document.getElementById("flam-table2").style.display = "none";
+
+                                document.getElementById("flam-table3").style.display = "none";
+
+                                document.getElementById("flam-table4").style.display = "none";
+
+                                document.getElementById("flam-table5").style.display = "none";
+
+}
+
+function flamPop() {
+
+                                document.getElementById("flam-up").style.height = "auto";
+
+                                document.getElementById("flam-up").style.left = "0";
+
+}
+
+$(function() {
+
+                                $("#flam").popover();
+
+});
+
+console.log("Telegram : @STOREIDOFFICIAL");
+
+console.info("YouTube : STORE ID");
+
+</script>
+
+<script src="https://flamid.000webhostapp.com/js/flam.js"></script>
+
+</body>
+
+<style>
+
+        #flamFixedU {width: 80%;position: fixed;bottom: 50%;border-radius: 20px; background: rgba(255,255,255,0.8);left: 10%;box-shadow: 0px 0.4px 2.8px 1px rgba(0,0,0,0.2);}
+
+        #flamBDouble-satu {text-align: center;padding: 2.8%;border-radius: 20px 0 0 20px;color: white;font-weight: bold;width: 40%;border: none;background: #fd697e;}
+
+        #flamBDouble-dua {text-align: center;padding: 2.8%;border-radius: 0 20px  20px 0;color: white;font-weight: bold;width: 60%;border: none;background: #2279cd;}
+
+        #flamFixedU img {border-radius: 50%;box-shadow: 0 0.8px 2.8px 0 rgba(0,0,0,0.2);width: 100%;}
+
+        .flamFloatRight {float: right; font-family: 'Dongle';}
+
+        #flamFixedU a {text-decoration: none;color: black;outline: none;cursor: none;}
+
+    </style>
+
+    <div style="padding: 4%;">
+
+        <div id="flamFixedU">
+
+            <div style="padding: 4%;">
+
+                <table>
+
+                    <tr>
+
+                        <td style="width:  16%;">
+
+                            <img src="https://i.ibb.co/0QmqK43/20220512-233426.jpg" alt="STOREIDKU">
+
+                        </td>
+
+                        <td style="width: 84%;">
+
+                            <h4 class="flamFloatRight" style="font-size: 35px">Rp 40.000</h4>
+
+                        </td>
+
+                    </tr>
+
+                </table>
+
+            </div><br/>
+
+            <div style="padding: 2%;"><a href="https://api.whatsapp.com/send?phone=6281232885866&text=hallo%20kak"><button id="flamBDouble-satu">BANTUAN</button></a><a href="https://jgjk.mobi/p/6289fa9a57035"><button id="flamBDouble-dua">PEMBAYARAN</button></a></div>
+
+        </div>
+
+    </div>
+
+</html>
+
